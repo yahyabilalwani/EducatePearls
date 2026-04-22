@@ -1,0 +1,6 @@
+@EducatePearlsAPI_HostAddress = http://localhost:5005
+
+GET {{EducatePearlsAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
