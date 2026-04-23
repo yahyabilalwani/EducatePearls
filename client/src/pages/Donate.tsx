@@ -42,29 +42,29 @@ const Donate = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-700 via-blue-600 to-cyan-600 text-white py-24 relative overflow-hidden">
+      <section className="bg-gradient-to-br from-green-700 via-green-600 to-emerald-600 text-white py-24 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 right-20 w-96 h-96 bg-white rounded-full mix-blend-screen filter blur-3xl"></div>
-          <div className="absolute bottom-0 left-20 w-96 h-96 bg-cyan-300 rounded-full mix-blend-screen filter blur-3xl"></div>
+          <div className="absolute bottom-0 left-20 w-96 h-96 bg-emerald-300 rounded-full mix-blend-screen filter blur-3xl"></div>
         </div>
         <div className="container-max text-center relative z-10">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 space-y-2">
             <span>Make a</span>
-            <span className="block text-cyan-200">Difference</span>
+            <span className="block text-emerald-200">Difference</span>
           </h1>
-          <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-green-100 max-w-3xl mx-auto leading-relaxed">
             Your generosity transforms lives and builds stronger communities.
             Every contribution counts towards creating lasting change.
           </p>
         </div>
       </section>
 
-      <section className="section-padding bg-gradient-to-b from-white to-blue-50">
+      <section className="section-padding bg-gradient-to-b from-white to-green-50">
         <div className="container-max">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Donation Form */}
             <div className="lg:col-span-2">
-              <div className="glass-card-premium p-10 rounded-3xl border border-blue-100/50">
+              <div className="glass-card-premium p-10 rounded-3xl border border-green-100/50">
                 <div className="flex items-center mb-10">
                   <div className="relative">
                     <Heart className="h-10 w-10 text-red-500 mr-4 animate-pulse" />
@@ -82,8 +82,8 @@ const Donate = () => {
                         onClick={() => handleAmountSelect(amount.value)}
                         className={`p-6 rounded-2xl border-2 transition-all duration-300 transform hover:scale-105 ${
                           selectedAmount === amount.value
-                            ? 'border-blue-600 bg-blue-50 shadow-lg'
-                            : 'border-gray-200 hover:border-blue-300 hover:bg-gray-50'
+                            ? 'border-green-600 bg-green-50 shadow-lg'
+                            : 'border-gray-200 hover:border-green-300 hover:bg-gray-50'
                         }`}
                       >
                         <div className="text-2xl font-bold text-gray-900">{amount.label}</div>
@@ -105,7 +105,7 @@ const Donate = () => {
                       required
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-5 py-3 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all duration-300 text-lg"
+                      className="w-full px-5 py-3 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent transition-all duration-300 text-lg"
                       placeholder="Enter your full name"
                     />
                   </div>
@@ -121,7 +121,7 @@ const Donate = () => {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-5 py-3 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all duration-300 text-lg"
+                      className="w-full px-5 py-3 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent transition-all duration-300 text-lg"
                       placeholder="your@email.com"
                     />
                   </div>
@@ -138,7 +138,7 @@ const Donate = () => {
                       min="1"
                       value={formData.amount}
                       onChange={handleChange}
-                      className="w-full px-5 py-3 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all duration-300 text-lg"
+                      className="w-full px-5 py-3 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent transition-all duration-300 text-lg"
                       placeholder="Enter amount"
                     />
                   </div>
@@ -153,14 +153,14 @@ const Donate = () => {
                       rows={4}
                       value={formData.message}
                       onChange={handleChange}
-                      className="w-full px-5 py-3 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all duration-300 resize-none text-lg"
+                      className="w-full px-5 py-3 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent transition-all duration-300 resize-none text-lg"
                       placeholder="Tell us about your donation or any specific cause..."
                     ></textarea>
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white py-4 px-6 rounded-2xl font-bold transition-all duration-300 transform hover:scale-105 flex items-center justify-center shadow-lg text-lg"
+                    className="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white py-4 px-6 rounded-2xl font-bold transition-all duration-300 transform hover:scale-105 flex items-center justify-center shadow-lg text-lg"
                   >
                     <Lock className="h-5 w-5 mr-2" />
                     Donate Securely
@@ -172,7 +172,7 @@ const Donate = () => {
             {/* Trust Elements and Info */}
             <div className="space-y-8">
               {/* Trust Badges */}
-              <div className="glass-card-premium p-8 rounded-3xl border border-blue-100/50">
+              <div className="glass-card-premium p-8 rounded-3xl border border-green-100/50">
                 <div className="flex items-center mb-8">
                   <Shield className="h-8 w-8 text-green-600 mr-3" />
                   <h3 className="text-2xl font-bold text-gray-900">Your Trust Matters</h3>
@@ -192,17 +192,17 @@ const Donate = () => {
                     </div>
                   ))}
                 </div>
-                <div className="mt-6 p-4 bg-blue-50 rounded-xl border border-blue-200">
-                  <p className="text-blue-900 font-semibold text-sm leading-relaxed">
+                <div className="mt-6 p-4 bg-green-50 rounded-xl border border-green-200">
+                  <p className="text-green-900 font-semibold text-sm leading-relaxed">
                     ✓ All donations are tax-exempt under Section 80G of the Income Tax Act, 1961
                   </p>
                 </div>
               </div>
 
               {/* Payment Methods */}
-              <div className="glass-card-premium p-8 rounded-3xl border border-blue-100/50">
+              <div className="glass-card-premium p-8 rounded-3xl border border-green-100/50">
                 <div className="flex items-center mb-8">
-                  <CreditCard className="h-8 w-8 text-blue-600 mr-3" />
+                  <CreditCard className="h-8 w-8 text-green-600 mr-3" />
                   <h3 className="text-2xl font-bold text-gray-900">Secure Payments</h3>
                 </div>
                 <p className="text-gray-600 mb-6 text-lg">

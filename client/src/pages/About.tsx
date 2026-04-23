@@ -34,16 +34,16 @@ const About = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-700 via-blue-600 to-cyan-600 text-white py-24 relative overflow-hidden">
+      <section className="bg-gradient-to-br from-green-700 via-green-600 to-emerald-600 text-white py-24 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-10 w-96 h-96 bg-white rounded-full mix-blend-screen filter blur-3xl"></div>
         </div>
         <div className="container-max text-center relative z-10">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 space-y-2">
             <span>About</span>
-            <span className="block text-cyan-200">Educate Pearls</span>
+            <span className="block text-emerald-200">Educate Pearls</span>
           </h1>
-          <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-green-100 max-w-3xl mx-auto leading-relaxed">
             We're on a mission to create lasting change through education and empowerment,
             building brighter futures for communities worldwide.
           </p>
@@ -55,8 +55,8 @@ const About = () => {
         <div className="container-max">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-20">
             {/* Mission */}
-            <div className="glass-card-premium p-10 rounded-3xl text-center group hover:scale-105 transition-all duration-300 border border-blue-100/50">
-              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl text-white mb-8 group-hover:scale-125 transition-transform shadow-lg">
+            <div className="glass-card-premium p-10 rounded-3xl text-center group hover:scale-105 transition-all duration-300 border border-green-100/50">
+              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl text-white mb-8 group-hover:scale-125 transition-transform shadow-lg">
                 <Target className="h-10 w-10" />
               </div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Mission</h2>
@@ -67,8 +67,8 @@ const About = () => {
             </div>
 
             {/* Vision */}
-            <div className="glass-card-premium p-10 rounded-3xl text-center group hover:scale-105 transition-all duration-300 border border-blue-100/50">
-              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-2xl text-white mb-8 group-hover:scale-125 transition-transform shadow-lg">
+            <div className="glass-card-premium p-10 rounded-3xl text-center group hover:scale-105 transition-all duration-300 border border-green-100/50">
+              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-emerald-500 to-green-500 rounded-2xl text-white mb-8 group-hover:scale-125 transition-transform shadow-lg">
                 <Eye className="h-10 w-10" />
               </div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Vision</h2>
@@ -79,7 +79,7 @@ const About = () => {
             </div>
 
             {/* Impact */}
-            <div className="glass-card-premium p-10 rounded-3xl text-center group hover:scale-105 transition-all duration-300 border border-blue-100/50">
+            <div className="glass-card-premium p-10 rounded-3xl text-center group hover:scale-105 transition-all duration-300 border border-green-100/50">
               <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-orange-500 to-red-500 rounded-2xl text-white mb-8 group-hover:scale-125 transition-transform shadow-lg">
                 <Award className="h-10 w-10" />
               </div>
@@ -100,8 +100,8 @@ const About = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((value, index) => (
-              <div key={index} className="glass-card-premium p-6 rounded-2xl hover:shadow-lg transition-all duration-300 group hover:scale-105 border border-blue-100/50">
-                <div className="text-blue-600 mb-4 group-hover:scale-125 transition-transform group-hover:text-blue-700">
+              <div key={index} className="glass-card-premium p-6 rounded-2xl hover:shadow-lg transition-all duration-300 group hover:scale-105 border border-green-100/50">
+                <div className="text-green-600 mb-4 group-hover:scale-125 transition-transform group-hover:text-green-700">
                   {value.icon}
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{value.title}</h3>
@@ -113,7 +113,7 @@ const About = () => {
       </section>
 
       {/* Achievements */}
-      <section className="py-20 lg:py-28 bg-gradient-to-br from-blue-50 via-white to-cyan-50">
+      <section className="py-20 lg:py-28 bg-gradient-to-br from-green-50 via-white to-emerald-50">
         <div className="container-max">
           <div className="text-center mb-16">
             <h2 className="section-title text-gray-900 mb-4">Our Achievements</h2>
@@ -121,7 +121,7 @@ const About = () => {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {achievements.map((achievement, index) => (
-              <div key={index} className="text-center p-8 rounded-2xl bg-white border border-blue-100/50 hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+              <div key={index} className="text-center p-8 rounded-2xl bg-white border border-green-100/50 hover:shadow-lg transition-all duration-300 transform hover:scale-105">
                 <div className="text-5xl md:text-6xl font-bold gradient-text mb-3">
                   {achievement.number}
                 </div>
@@ -137,7 +137,7 @@ const About = () => {
         <div className="container-max">
           <div className="max-w-4xl mx-auto">
             <h2 className="section-title text-center text-gray-900 mb-16">Our Story</h2>
-            <div className="glass-card-premium p-12 rounded-3xl border border-blue-100/50">
+            <div className="glass-card-premium p-12 rounded-3xl border border-green-100/50">
               <div className="space-y-8 text-gray-700 text-lg leading-relaxed">
                 <p className="text-xl">
                   Educate Pearls Association was founded with a simple yet powerful belief: that education is the key to
@@ -162,10 +162,10 @@ const About = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-20 lg:py-28 bg-gradient-to-r from-blue-600 to-blue-700">
+      <section className="py-20 lg:py-28 bg-gradient-to-r from-green-600 to-green-700">
         <div className="container-max text-center">
           <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">Join Our Mission</h2>
-          <p className="text-xl text-blue-100 mb-12 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl text-green-100 mb-12 max-w-2xl mx-auto leading-relaxed">
             Be part of the change. Whether through volunteering, partnerships, or donations,
             your support helps us create brighter futures.
           </p>

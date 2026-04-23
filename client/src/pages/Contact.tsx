@@ -34,44 +34,44 @@ const Contact = () => {
       title: "Email Us",
       value: "info.educatepearls@gmail.com",
       description: "Send us a detailed message",
-      color: "from-blue-500 to-blue-600"
+      color: "from-green-500 to-green-600"
     },
     {
       icon: <MapPin className="h-6 w-6" />,
       title: "Visit Our Website",
       value: "www.educatepearls.org",
       description: "Learn more about our work",
-      color: "from-purple-500 to-purple-600"
+      color: "from-emerald-500 to-emerald-600"
     }
   ];
 
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-700 via-blue-600 to-cyan-600 text-white py-24 relative overflow-hidden">
+      <section className="bg-gradient-to-br from-green-700 via-green-600 to-emerald-600 text-white py-24 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full mix-blend-screen filter blur-3xl"></div>
         </div>
         <div className="container-max text-center relative z-10">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 space-y-2">
             <span>Get in</span>
-            <span className="block text-cyan-200">Touch</span>
+            <span className="block text-emerald-200">Touch</span>
           </h1>
-          <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-green-100 max-w-3xl mx-auto leading-relaxed">
             We'd love to hear from you. Reach out with questions, partnership opportunities,
             or ways to get involved in our mission.
           </p>
         </div>
       </section>
 
-      <section className="section-padding bg-gradient-to-b from-white to-blue-50">
+      <section className="section-padding bg-gradient-to-b from-white to-green-50">
         <div className="container-max">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Contact Form */}
             <div className="lg:col-span-2">
-              <div className="glass-card-premium p-10 rounded-3xl border border-blue-100/50">
+              <div className="glass-card-premium p-10 rounded-3xl border border-green-100/50">
                 <div className="flex items-center mb-10">
-                  <MessageCircle className="h-10 w-10 text-blue-600 mr-4" />
+                  <MessageCircle className="h-10 w-10 text-green-600 mr-4" />
                   <h2 className="text-3xl font-bold text-gray-900">Send us a Message</h2>
                 </div>
 
@@ -87,7 +87,7 @@ const Contact = () => {
                       required
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-5 py-3 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all duration-300 text-lg"
+                      className="w-full px-5 py-3 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent transition-all duration-300 text-lg"
                       placeholder="Enter your full name"
                     />
                   </div>
@@ -103,7 +103,7 @@ const Contact = () => {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-5 py-3 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all duration-300 text-lg"
+                      className="w-full px-5 py-3 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent transition-all duration-300 text-lg"
                       placeholder="your@email.com"
                     />
                   </div>
@@ -119,14 +119,14 @@ const Contact = () => {
                       required
                       value={formData.message}
                       onChange={handleChange}
-                      className="w-full px-5 py-3 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all duration-300 resize-none text-lg"
+                      className="w-full px-5 py-3 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent transition-all duration-300 resize-none text-lg"
                       placeholder="Tell us how we can help you..."
                     ></textarea>
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white py-4 px-6 rounded-2xl font-bold transition-all duration-300 transform hover:scale-105 flex items-center justify-center shadow-lg text-lg"
+                    className="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white py-4 px-6 rounded-2xl font-bold transition-all duration-300 transform hover:scale-105 flex items-center justify-center shadow-lg text-lg"
                   >
                     <Send className="h-5 w-5 mr-2" />
                     Send Message
@@ -140,7 +140,7 @@ const Contact = () => {
               {/* Contact Methods */}
               <div className="space-y-6">
                 {contactMethods.map((method, index) => (
-                  <div key={index} className="glass-card-premium p-6 rounded-3xl hover:shadow-lg transition-all duration-300 hover:scale-105 border border-blue-100/50 group">
+                  <div key={index} className="glass-card-premium p-6 rounded-3xl hover:shadow-lg transition-all duration-300 hover:scale-105 border border-green-100/50 group">
                     <div className="flex items-start">
                       <div className={`inline-flex items-center justify-center w-14 h-14 bg-gradient-to-r ${method.color} rounded-2xl text-white mr-5 group-hover:scale-110 transition-transform flex-shrink-0`}>
                         {method.icon}
@@ -148,7 +148,7 @@ const Contact = () => {
                       <div className="flex-1">
                         <h3 className="text-lg font-bold text-gray-900 mb-1">{method.title}</h3>
                         <p className="text-gray-600 mb-2 text-sm">{method.description}</p>
-                        <p className="text-blue-600 font-bold text-lg">{method.value}</p>
+                        <p className="text-green-600 font-bold text-lg">{method.value}</p>
                       </div>
                     </div>
                   </div>
@@ -156,7 +156,7 @@ const Contact = () => {
               </div>
 
               {/* Office Hours */}
-              <div className="glass-card-premium p-8 rounded-3xl border border-blue-100/50">
+              <div className="glass-card-premium p-8 rounded-3xl border border-green-100/50">
                 <div className="flex items-center mb-8">
                   <Clock className="h-8 w-8 text-orange-500 mr-3" />
                   <h3 className="text-2xl font-bold text-gray-900">Office Hours</h3>
@@ -176,13 +176,13 @@ const Contact = () => {
               </div>
 
               {/* Location */}
-              <div className="glass-card-premium p-8 rounded-3xl border border-blue-100/50">
+              <div className="glass-card-premium p-8 rounded-3xl border border-green-100/50">
                 <div className="flex items-center mb-8">
                   <LocationIcon className="h-8 w-8 text-red-500 mr-3" />
                   <h3 className="text-2xl font-bold text-gray-900">Our Location</h3>
                 </div>
-                <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 text-center border border-blue-200/50">
-                  <LocationIcon className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 text-center border border-green-200/50">
+                  <LocationIcon className="h-12 w-12 text-green-600 mx-auto mb-4" />
                   <p className="text-gray-900 font-bold text-lg mb-2">Jammu & Kashmir, India</p>
                   <p className="text-sm text-gray-600">Serving communities across the region</p>
                 </div>
@@ -193,17 +193,17 @@ const Contact = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 lg:py-28 bg-gradient-to-r from-blue-600 to-blue-700 relative overflow-hidden">
+      <section className="py-20 lg:py-28 bg-gradient-to-r from-green-600 to-green-700 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full mix-blend-screen filter blur-3xl"></div>
         </div>
         <div className="container-max text-center relative z-10">
           <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">Ready to Partner With Us?</h2>
-          <p className="text-xl text-blue-100 mb-12 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl text-green-100 mb-12 max-w-2xl mx-auto leading-relaxed">
             Join our network of supporters and partners working towards educational excellence and community development.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/donate" className="inline-flex items-center justify-center bg-white text-blue-600 hover:bg-blue-50 font-bold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg text-lg">
+            <a href="/donate" className="inline-flex items-center justify-center bg-white text-green-600 hover:bg-green-50 font-bold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg text-lg">
               Make a Donation
             </a>
             <a href="/programs" className="btn-ghost text-lg px-8 py-4">
