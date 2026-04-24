@@ -80,7 +80,7 @@ const About = () => {
 
             {/* Impact */}
             <div className="glass-card-premium p-10 rounded-3xl text-center group hover:scale-105 transition-all duration-300 border border-green-100/50">
-              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-orange-500 to-red-500 rounded-2xl text-white mb-8 group-hover:scale-125 transition-transform shadow-lg">
+              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-green-600 to-emerald-600 rounded-2xl text-white mb-8 group-hover:scale-125 transition-transform shadow-lg">
                 <Award className="h-10 w-10" />
               </div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Impact</h2>
